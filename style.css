@@ -1,0 +1,261 @@
+:root {
+    --gray: #A5A5A5;
+    --dark-gray: #343434;
+    --btn-orang: #00c853;
+    --BG-color: #000;
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #ec4899;
+    --purble: #8b5cf6;
+    --green: #00bd6edd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--light);
+    background: var(--darkest);
+    height: 100%;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* html,
+body #fullheight {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100% !important;
+    height: 100%;
+} */
+
+li {
+    list-style: none;
+}
+
+button,
+input {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.score input {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+    color: #fff200;
+    background-color: #00000059;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+
+
+#quiz {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--darker);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 18px #00000080;
+    overflow: hidden;
+
+}
+
+#quiz .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 5px;
+    background-color: #00c853;
+    transition: 0.3s;
+}
+
+
+#quiz .questions {
+    margin-bottom: 10px;
+    padding: 15px;
+    background: var(--dark);
+    border-radius: 10px;
+}
+
+#quiz .questions .question {
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#quiz .options {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+
+#quiz .options .answers {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#quiz .options .answers .answer {
+    display: flex;
+    gap: 15px;
+    border-bottom: 2px solid #243142;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#quiz .lab1 {
+    animation: fade-in 01s 0.2s 1;
+}
+
+#quiz .lab2 {
+    animation: fade-in 01s 0.4s 1;
+}
+
+#quiz .lab3 {
+    animation: fade-in 01s 0.6s 1;
+}
+
+#quiz .lab4 {
+    animation: fade-in 01s 0.8s 1;
+}
+
+/* @keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.options .answers .answer:hover {
+    background: #243142;
+    transition: 0.4s;
+}
+
+.options .answers .checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray);
+    border-radius: 50%;
+
+}
+
+.options .answers input:checked~.checkmark {
+    background-color: var(--purble);
+}
+
+.options .answers span::after {
+    display: none;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+
+
+#quiz .options .answers input {
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+.buttons button {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.buttons .next {
+    background: #6b7280;
+}
+
+.active {
+    background: #00c853 !important;
+}
+
+.buttons .back {
+    background: #cf7500
+}
+
+.buttons .active:hover {
+    box-shadow: 2px 2px 16px #00c85357;
+    transition: 0.3s;
+}
+
+.result{
+    text-align: center;
+}
+
+.result span {
+    padding: 10px;
+    margin: 15px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

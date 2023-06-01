@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "What is JavaScript?",
+            "choices": [
+                "A programming language primarily used for styling web pages.",
+                "A scripting language used for creating dynamic web content.",
+                "A database management system.",
+                "A markup language for structuring web pages."
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Which keyword is used to declare a JavaScript variable?",
+            "choices": [
+                "var",
+                "let",
+                "const",
+                "All of the above"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the output of the following code?\n\nconsole.log(typeof \"Hello, world!\");",
+            "choices": [
+                "\"Hello, world!\"",
+                "number",
+                "string",
+                "undefined"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Which of the following is NOT a JavaScript data type?",
+            "choices": [
+                "boolean",
+                "string",
+                "integer",
+                "function"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the result of the expression 3 + 2 + \"7\"?",
+            "choices": [
+                "\"327\"",
+                "\"12\"",
+                "12",
+                "327"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the correct syntax for a single-line comment in JavaScript?",
+            "choices": [
+                "<!-- This is a comment -->",
+                "// This is a comment",
+                "/* This is a comment */",
+                "<!--- This is a comment --->"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the parseInt() function in JavaScript?",
+            "choices": [
+                "To convert a string to an integer",
+                "To round a number to the nearest integer",
+                "To determine the length of a string",
+                "To generate a random number"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the correct way to write an if statement in JavaScript?",
+            "choices": [
+                "if x = 5 then",
+                "if x == 5",
+                "if (x === 5)",
+                "if x = 5"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Which operator is used for strict equality comparison in JavaScript?",
+            "choices": [
+                "==",
+                "===",
+                "=",
+                "!="
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What does the console.log() function do in JavaScript?",
+            "choices": [
+                "It prints text to the console for debugging purposes.",
+                "It displays an alert box with a message.",
+                "It opens the browser's developer tools.",
+                "It executes a function."
+            ],
+            "correctAnswer": 0
+        }
+    ]
+}
